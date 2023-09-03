@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, Modal, Alert } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, Modal, Alert, KeyboardAvoidingView } from 'react-native';
 
 export default function Start({ setScreen }) {
     const [userInput, setInput] = useState("")
@@ -12,7 +12,7 @@ export default function Start({ setScreen }) {
         }
     }
     return (
-        <View>
+        <KeyboardAvoidingView behavior="position">
             <Text className="text-green-500 font-extrabold text-4xl mt-4 text-center">Lets Play!!</Text>
             <Text className="text-white mt-4 font-bold text-center">Enter a Number and let your phone guess it!!</Text>
             <View style={{ backgroundColor: "#72063c50" }} className="p-5 rounded-xl my-6">
@@ -44,6 +44,6 @@ export default function Start({ setScreen }) {
                     </TouchableOpacity>
                 </View>
             </View>
-        </View>
+        </KeyboardAvoidingView>
     );
 }

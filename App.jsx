@@ -1,5 +1,5 @@
 import React from 'react';
-import { View,StatusBar, ImageBackground, SafeAreaView } from 'react-native';
+import { View, StatusBar, ImageBackground, SafeAreaView } from 'react-native';
 import Start from './screen/startScreen';
 import { useState } from 'react';
 import Gamescreen from './screen/gameScreen';
@@ -18,9 +18,9 @@ const App = () => {
 
   return (
     <>
-    <SafeAreaView style={{ backgroundColor: "#4B4453" }} className="flex-1">
-    <StatusBar barStyle='light-content' />
-      <ImageBackground resizeMethod="scale" style={{ height: "100%", width: "100%", position: "absolute" }} source={{ uri: "https://cdn.pixabay.com/photo/2019/08/14/20/54/mobile-video-game-vector-background-4406706_1280.png" }} />
+      <SafeAreaView style={{ backgroundColor: "#4B4453" }} className="flex-1">
+        <ImageBackground resizeMethod="scale" style={{ height: "100%", width: "100%", position: "absolute" }} source={{ uri: "https://cdn.pixabay.com/photo/2019/08/14/20/54/mobile-video-game-vector-background-4406706_1280.png" }} />
+        <StatusBar barStyle='light-content' backgroundColor={"#72063c50"} />
       <View className="flex-1 items-center pt-8 justify-start">
         {Screen}
       </View>
